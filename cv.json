@@ -1,34 +1,29 @@
 {
     "basics": {
-        "name": "Miguel Ángel Durán",
-        "label": "Full-Stack developer with more than 15 years of experience & development content creator",
-        "image": "/public/_foto.png",
-        "email": "miduga@gmail.com",
-        "phone": "+34 688888888",
-        "url": "https://midu.dev",
-        "summary": "+15 years of experience as a web developer. Currently I am a content creator and development dommunicator. I live in Barcelona, Spain. I have worked in different environments: from accelerating the development of start-ups to leading teams in multinational companies.",
+        "name": "Gonzalo Nicolas Fernández",
+        "label": "Desarrollador Back-End con 3 años de experiencia, enfocado en expandir habilidades para convertirme en un Desarrollador Full-Stack.",
+        "image": "/me.webp",
+        "email": "fernandez-gonza@hotmail.com",
+        "phone": "+54 11 44071992",
+        "url": "https://gonzalofernandez.netlify.app/",
+        "summary": "+3 de años de experiencia como desarrollador web. Resido en San Cayetano, Argentina, donde he trabajado en una startup que contribuyó significativamente a mi crecimiento profesional. Durante mi trayectoria, he colaborado en diversos proyectos, desde startups hasta empresas consolidadas, adquiriendo habilidades sólidas en el desarrollo.",
         "location": {
-            "address": "",
-            "postalCode": "08820",
-            "city": "el Prat de Llobregat",
-            "countryCode": "ES",
-            "region": "Spain"
+            "address": "Belgrano 173",
+            "postalCode": "7521",
+            "city": "San Cayetano",
+            "countryCode": "Ar",
+            "region": "Argentina"
         },
         "profiles": [
             {
                 "network": "LinkedIn",
-                "username": "midudev",
-                "url": "https://linkedin.com/in/midudev"
-            },
-            {
-                "network": "X",
-                "username": "midudev",
-                "url": "https://x.com/midudev"
+                "username": "Gonzalo Fernández",
+                "url": "www.linkedin.com/in/gonzalo-nicolas-fernandez"
             },
             {
                 "network": "GitHub",
-                "username": "midudev",
-                "url": "https://github.com/midudev"
+                "username": "Gonzalo",
+                "url": "https://github.com/CharlyGon"
             }
         ]
     },
@@ -81,41 +76,12 @@
     ],
     "education": [
         {
-            "institution": "Universitat Oberta de Catalunya",
-            "url": "https://www.uoc.edu/portal/es/index.html",
-            "area": "Software Engineer",
-            "studyType": "Bachelor",
-            "startDate": "2003-01-01",
-            "endDate": "2009-01-01",
-            "score": "4.0",
-            "courses": [
-                "DB1101 - Basic SQL"
-            ]
-        }
-    ],
-    "awards": [
-        {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
-        }
-    ],
-    "certificates": [
-        {
-            "name": "Certificate",
-            "date": "2021-11-07",
-            "issuer": "Company",
-            "url": "https://certificate.com"
-        }
-    ],
-    "publications": [
-        {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "url": "https://publication.com",
-            "summary": "Description…"
+            "institution": "Instituto Superior Santo Domingo",
+            "url": "https://issd.edu.ar/es/analista-sistemas/",
+            "area": "Analista Sistemas",
+            "studyType": "Terciario",
+            "startDate": "01-01-2020",
+            "endDate": null
         }
     ],
     "skills": [
@@ -235,85 +201,6 @@
         {
             "language": "English",
             "fluency": "Advanced"
-        }
-    ],
-    "interests": [
-        {
-            "name": "Wildlife",
-            "keywords": [
-                "Ferrets",
-                "Unicorns"
-            ]
-        }
-    ],
-    "references": [
-        {
-            "name": "Jane Doe",
-            "reference": "Reference…"
-        }
-    ],
-    "projects": [
-        {
-            "name": "mars.codes",
-            "isActive": true,
-            "description": "Interactive story with programming challenges to travel to Mars",
-            "highlights": [
-                "Choose your own adventure",
-                "In progress"
-            ],
-            "url": "https://mars.codes"
-        },
-        {
-            "name": "AdventJS",
-            "isActive": true,
-            "description": "JavaScript programming challenges for every day of December until Christmas",
-            "highlights": [
-                "+1 million visits",
-                "Multilanguage",
-                "JavaScript & TypeScript"
-            ],
-            "url": "https://advent.js/dev"
-        },
-        {
-            "name": "Codember",
-            "isActive": true,
-            "description": "Interactive programming game with challenges and secrets",
-            "highlights": [
-                "+2000 active users",
-                "Challenges for any language"
-            ],
-            "url": "https://codember.dev"
-        },
-        {
-            "name": "codi.link",
-            "isActive": true,
-            "description": "Playground of HTML, CSS and JavaScript code for sharing",
-            "highlights": [
-                "100k monthly visit",
-                "Developed by the community"
-            ],
-            "url": "https://codi.link",
-            "github": "https://github.com/midudev/codi.link"
-        },
-        {
-            "name": "Pruebas Técnicas",
-            "isActive": true,
-            "description": "List of technical tests of companies to practice programming",
-            "highlights": [
-                "100% free",
-                "+500 community solutions"
-            ],
-            "url": "https://pruebastecnicas.com",
-            "github": "https://github.com/midudev/pruebas-tecnicas"
-        },
-        {
-            "name": "miduConf",
-            "description": "Streaming programming conference for the Spanish-speaking community with top talks",
-            "highlights": [
-                "+15k tickets handed over",
-                "+50k live viewers"
-            ],
-            "url": "https://miduconf.com"
         }
     ]
 }
