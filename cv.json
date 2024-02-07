@@ -18,7 +18,7 @@
             {
                 "network": "LinkedIn",
                 "username": "Gonzalo Fernández",
-                "url": "www.linkedin.com/in/gonzalo-nicolas-fernandez"
+                "url": "https://www.linkedin.com/in/gonzalo-nicolas-fernandez"
             },
             {
                 "network": "GitHub",
@@ -29,49 +29,32 @@
     },
     "work": [
         {
-            "name": "midudev",
-            "position": "Web programming communicator",
-            "url": "https://twitch.tv/midudev",
-            "startDate": "2021-01-01",
+            "name": "Software Developer",
+            "position": "Back-End Developer",
+            "startDate": "2021-07-01",
             "endDate": null,
-            "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
-            "highlights": [
-                "Started the company"
-            ]
+            "summary": "Desarrollo del backend de un sistema de versionado de documentos. Responsable de implementaciones y de la infraestructura. Elaboración de documentación para especificaciones técnicas."
         },
         {
-            "name": "Adevinta",
-            "position": "Lead Frontend Architect",
-            "url": "https://twitch.tv/midudev",
-            "startDate": "2016-06-01",
-            "endDate": "2022-09-01",
-            "summary": "I led a technical convergence between different products and migrated from a monolithic architecture to a more flexible and optimised one. I fostered best practices and performance culture improvements, as well as rapid delivery of value to users.",
-            "highlights": [
-                "Started the company"
-            ]
+            "name": "Software Developer",
+            "position": "Back-End Developer",
+            "startDate": "2023-03-01",
+            "endDate": "2023-08-01",
+            "summary": "Desarrollo del backend de una red para el intercambio de assets orientada hacia los influencers. Automatización de contratos inteligentes. Implementación y despliegue de infraestructura. Interacción con la blockchain."
         },
         {
-            "name": "Hubii",
-            "position": "Senior FrontEnd Developer",
-            "startDate": "2011-03-01",
-            "endDate": "2016-05-01",
-            "summary": "I developed a geolocated news platform and an API to consume the information. Scaled services to support the load of over hundreds of thousands of requests per day. Cut delivery times and deployments to production by half. Collaborated with Mozilla and Telefónica to develop the first FirefoxOS TV app.",
-            "highlights": [
-                "Started the company"
-            ]
-        }
-    ],
-    "volunteer": [
+            "name": "Software Developer",
+            "position": "Software Developer",
+            "startDate": "2022-02-01",
+            "endDate": "2022-06-01",
+            "summary": "Desarrollador de software para un proxy sin gráficos. Su enfoque se centró en scripts y configuración de infraestructura, permitiendo superar restricciones geográficas, mantener el anonimato y reutilizar servicios restringidos por IP al proporcionar dinámicamente una nueva dirección, adaptándose mediante scripts y automatizaciones."
+        },
         {
-            "organization": "Organization",
-            "position": "Volunteer",
-            "url": "https://organization.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Description…",
-            "highlights": [
-                "Awarded 'Volunteer of the Month'"
-            ]
+            "name": "Trainee",
+            "position": "Front-End Developer",
+            "startDate": "2020-07-01",
+            "endDate": "2021-08-01",
+            "summary": "Responsable del desarrollo de la página de inicio de la empresa. Diseño de aplicaciones a través de maquetas con React, CSS y Material-UI. Implementación de virtualización de aplicaciones utilizando Docker. Competente en la gestión de repositorios en GitHub y despliegue en AWS."
         }
     ],
     "education": [
@@ -172,13 +155,11 @@
             ]
         },
         {
-            "name": "Next.js",
+            "name": "Nest",
             "level": "Advanced",
             "keywords": [
                 "Web development",
-                "Frontend",
-                "React Framework",
-                "SSR",
+                "Backend",
                 "Static Generation"
             ]
         },
@@ -190,6 +171,46 @@
                 "Frontend",
                 "JavaScript Library",
                 "UI"
+            ]
+        },
+        {
+            "name": "Jest",
+            "level": "Advanced",
+            "keywords": [
+                "Web development",
+                "Frontend",
+                "Testing",
+                "JavaScript Library"
+            ]
+        },
+        {
+            "name": "Docker",
+            "level": "Advanced",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "DevOps",
+                "Containerization"
+            ]
+        },
+        {
+            "name": "AWS",
+            "level": "Advanced",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "DevOps",
+                "Cloud"
+            ]
+        },
+        {
+            "name": "MongoDB",
+            "level": "Advanced",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "Database",
+                "NoSQL"
             ]
         }
     ],
