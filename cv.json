@@ -70,15 +70,25 @@
     "skills": [
         {
             "name": "HTML",
-            "level": "Master",
+            "level": "Advanced",
             "keywords": [
                 "Web development",
                 "Frontend"
             ]
         },
         {
+            "name": "Python",
+            "level": "Advanced",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "Data Science",
+                "Machine Learning"
+            ]
+        },
+        {
             "name": "CSS",
-            "level": "Master",
+            "level": "Advanced",
             "keywords": [
                 "Web development",
                 "Frontend",
@@ -211,6 +221,74 @@
                 "Backend",
                 "Database",
                 "NoSQL"
+            ]
+        },
+        {
+            "name": "Postman",
+            "level": "Advanced",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "API"
+            ]
+        },
+        {
+            "name": "Mongoose",
+            "level": "Advanced",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "Database",
+                "ODM"
+            ]
+        },
+        {
+            "name": "Astro",
+            "level": "",
+            "keywords": [
+                "Web development",
+                "Frontend",
+                "Static Generation"
+            ]
+        },
+        {
+            "name": "Linux",
+            "level": "",
+            "keywords": [
+                "Operating System",
+                "Backend",
+                "DevOps",
+                "Server"
+            ]
+        },
+        {
+            "name": "Stellar",
+            "level": "",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "Criptomoneda",
+                "Contratos inteligentes"
+            ]
+        },
+        {
+            "name": "Ethereum",
+            "level": "",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "Criptomoneda",
+                "Contratos inteligentes"
+            ]
+        },
+        {
+            "name": "Go",
+            "level": "",
+            "keywords": [
+                "Web development",
+                "Backend",
+                "Lenguaje de programación",
+                "Servidor"
             ]
         }
     ],

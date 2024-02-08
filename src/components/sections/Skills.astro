@@ -1,21 +1,28 @@
 ---
-import Section from "../Section.astro"
-import HTML from "@/icons/Html.astro"
-import CSS from "@/icons/Css.astro"
-import JavaScript from "@/icons/JavaScript.astro"
-import TypeScript from "@/icons/Types.astro"
-import React from "@/icons/React.astro"
-import Node from "@/icons/Node.astro"
-import MySQL from "@/icons/Sql.astro"
-import Git from "@/icons/Git.astro"
-import GitHub from "@/icons/GitHub.astro"
-import Tailwind from "@/icons/Tailwind.astro"
-import AWS from "@/icons/Aws.astro"
-import Docker from "@/icons/Docker.astro"
-import MongoDB from "@/icons/MongoDB.astro"
-import Nest from "@/icons/NestJs.astro"
-import Jest from "@/icons/Jest.astro"
-import { skills } from "@cv"
+import Section from "../Section.astro";
+import HTML from "@/icons/Html.astro";
+import CSS from "@/icons/Css.astro";
+import JavaScript from "@/icons/JavaScript.astro";
+import TypeScript from "@/icons/Types.astro";
+import React from "@/icons/React.astro";
+import Node from "@/icons/Node.astro";
+import MySQL from "@/icons/Sql.astro";
+import Git from "@/icons/Git.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Tailwind from "@/icons/Tailwind.astro";
+import AWS from "@/icons/Aws.astro";
+import Docker from "@/icons/Docker.astro";
+import MongoDB from "@/icons/MongoDB.astro";
+import Nest from "@/icons/NestJs.astro";
+import Jest from "@/icons/Jest.astro";
+import Python from "@/icons/Python.astro";
+import Linux from "@/icons/Linux.astro";
+import Mongoose from "@/icons/Mongoose.astro";
+import Postman from "@/icons/Postman.astro";
+import Ethereum from "@/icons/Ethereum.astro";
+import Stellar from "@/icons/Stellar.astro";
+import Go from "@/icons/Go.astro";
+import { skills } from "@cv";
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -33,21 +40,28 @@ const SKILLS_ICONS: Record<string, any> = {
   MongoDB,
   Nest,
   Jest,
-}
+  Python,
+  Linux,
+  Mongoose,
+  Postman,
+  Ethereum,
+  Stellar,
+  Go,
+};
 ---
 
 <Section title="Habilidades">
   <ul>
     {
       skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
-        const Icon = SKILLS_ICONS[iconName]
+        const iconName = name === "Next.js" ? "Next" : name;
+        const Icon = SKILLS_ICONS[iconName];
 
         return (
           <li>
             {Icon && <Icon />} <span>{name}</span>
           </li>
-        )
+        );
       })
     }
   </ul>
