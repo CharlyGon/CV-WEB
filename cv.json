@@ -1,12 +1,10 @@
 {
     "basics": {
         "name": "Gonzalo Nicolas Fernández",
-        "label": "Desarrollador Back-End con 3 años de experiencia, enfocado en expandir habilidades para convertirme en un Desarrollador Full-Stack.",
+        "label": "Desarrollador backend con 3 años de experiencia en creación de APIs y optimización de sistemas con Node.js y TypeScript. Despliegue en la nube con Docker y AWS, enfocado en soluciones eficientes y mantenibles. Adaptable a nuevas tecnologías y colaborador eficaz en equipos ágiles",
         "image": "/me.webp",
         "email": "fernandez-gonza@hotmail.com",
-        "phone": "+54 11 44071992",
         "url": "https://gonzalofernandez.netlify.app/",
-        "summary": "+3 de años de experiencia como desarrollador. Resido en San Cayetano, Argentina, donde he trabajado en una startup que contribuyó significativamente a mi crecimiento profesional. Durante mi trayectoria, he colaborado en diversos proyectos, desde startups hasta empresas consolidadas, adquiriendo habilidades sólidas en el desarrollo.",
         "location": {
             "address": "Belgrano 173",
             "postalCode": "7521",
@@ -29,39 +27,105 @@
     },
     "work": [
         {
-            "name": "Software Developer",
-            "position": "Back-End Developer",
-            "startDate": "2021-07-01",
-            "endDate": null,
-            "summary": "Desarrollo del backend de un sistema de versionado de documentos. Responsable de implementaciones y de la infraestructura. Elaboración de documentación para especificaciones técnicas."
+            "company": "Simple AI",
+            "location": "Argentina - En remoto",
+            "roles": [
+                {
+                    "position": "Backend Developer",
+                    "startDate": "2024-11-01",
+                    "endDate": "",
+                    "title": "Automatización de Procesos Operativos",
+                    "summary": [
+                        "Desarrollo backend para optimizar procesos operativos en una empresa que integra inteligencia artificial y experiencia humana.",
+                        "Automatización de flujos con Puppeteer y Playwright, reduciendo errores y tiempos operativos.",
+                        "Implementación de funciones serverless en AWS Lambda con Node.js para una infraestructura escalable."
+                    ],
+                    "technologies": "Node.js, TypeScript, AWS Lambda, Puppeteer, Playwright, Scrum, GitHub"
+                }
+            ]
         },
         {
-            "name": "Software Developer",
-            "position": "Back-End Developer",
-            "startDate": "2023-03-01",
-            "endDate": "2023-08-01",
-            "summary": "Desarrollo del backend de una red para el intercambio de assets orientada hacia los influencers. Automatización de contratos inteligentes. Implementación y despliegue de infraestructura. Interacción con la blockchain."
+            "company": "Dam Squad",
+            "location": "España - En remoto",
+            "roles": [
+                {
+                    "position": "Backend Developer",
+                    "startDate": "2024-05-01",
+                    "endDate": "2024-10-01",
+                    "title": "Versionador de Documentos",
+                    "summary": [
+                        "Desarrollo de backend para una plataforma de gestión de usuarios con roles diferenciados y autenticación sin contraseña.",
+                        "Integración de Stripe para pagos y configuración de notificaciones automáticas por correo.",
+                        "Implementación de un sistema de intercambio de documentos categorizados, con avance automático de hitos según el tipo de documento subido.",
+                        "Colaboración en un entorno ágil (Scrum) asegurando entregas regulares."
+                    ],
+                    "technologies": "Node.js, TypeScript, Prisma, PostgreSQL, Stripe, Zod, Express.js, Scrum, GitLab"
+                }
+            ]
         },
         {
-            "name": "Software Developer",
-            "position": "Software Developer",
-            "startDate": "2022-02-01",
-            "endDate": "2022-06-01",
-            "summary": "Desarrollador de software para un proxy sin gráficos. Su enfoque se centró en scripts y configuración de infraestructura, permitiendo superar restricciones geográficas, mantener el anonimato y reutilizar servicios restringidos por IP al proporcionar dinámicamente una nueva dirección, adaptándose mediante scripts y automatizaciones."
-        },
-        {
-            "name": "Trainee",
-            "position": "Front-End Developer",
-            "startDate": "2020-07-01",
-            "endDate": "2021-08-01",
-            "summary": "Responsable del desarrollo de la página de inicio de la empresa. Diseño de aplicaciones a través de maquetas con React, CSS y Material-UI. Implementación de virtualización de aplicaciones utilizando Docker. Competente en la gestión de repositorios en GitHub y despliegue en AWS."
+            "company": "Blue Bit Software",
+            "location": "Argentina - En remoto",
+            "roles": [
+                {
+                    "position": "Backend Developer",
+                    "startDate": "2021-09-01",
+                    "endDate": "2024-04-01",
+                    "title": "Versionador de Documentos",
+                    "summary": [
+                        "Desarrollo de un sistema de versionado de documentos que permitía a los usuarios regresar a versiones anteriores y publicar nuevas versiones con firma digital y gestión de roles de usuario.",
+                        "Implementación de almacenamiento en AWS S3 para guardar imágenes vinculadas a documentos y claves privadas de los usuarios, gestionadas mediante AWS KMS para garantizar la seguridad en la firma digital.",
+                        "Responsable de despliegues manuales en AWS (ECR, EC2), gestionando la infraestructura y el correcto funcionamiento de los contenedores.",
+                        "Redacción de documentación técnica detallada, fundamental para los usuarios finales y la operación del sistema."
+                    ],
+                    "technologies": "Node.js, TypeScript, Mongoose, MongoDB, Docker, Makefile, AWS ECR, AWS EC2, AWS S3, AWS KMS, Postman, Git, GitHub, Scrum"
+                },
+                {
+                    "position": "Backend Developer",
+                    "startDate": "2023-03-01",
+                    "endDate": "2023-08-01",
+                    "title": "Plataforma de Intercambio de Assets Virtuales",
+                    "summary": [
+                        "Desarrollo del backend para una plataforma orientada al intercambio de assets virtuales, específicamente diseñada para influencers.",
+                        "Despliegue y automatización de contratos inteligentes, permitiendo la interacción directa con la blockchain para gestionar transacciones de assets.",
+                        "Responsable del despliegue y mantenimiento de la infraestructura en AWS, asegurando la escalabilidad y el correcto funcionamiento de los servicios.",
+                        "Interacción con diversas blockchains para la integración y operación de los contratos inteligentes."
+                    ],
+                    "technologies": "Nest.js, Node.js, TypeScript, Solidity, JavaScript, Web3, MySQL, Docker, Makefile, AWS ECR, AWS EC2, Ethereum, Solana, Git, GitLab, Scrum"
+                },
+                {
+                    "position": "Software Developer",
+                    "startDate": "2022-02-01",
+                    "endDate": "2022-06-01",
+                    "title": "Proxy Sin Interfaz Gráfica",
+                    "summary": [
+                        "Desarrollo de un proxy sin interfaz gráfica, diseñado para superar restricciones geográficas y mantener el anonimato en las conexiones.",
+                        "Implementación de scripts y automatizaciones que permitían asignar dinámicamente nuevas direcciones IP, reutilizando servicios restringidos por ubicación geográfica.",
+                        "Configuración y gestión de infraestructura en la nube para garantizar la estabilidad y el rendimiento del proxy.",
+                        "Adaptación continua del sistema a las necesidades del proyecto mediante el uso de automatización avanzada para la asignación de IPs."
+                    ],
+                    "technologies": "AWS Lambda, AWS EC2, AWS ECR, AWS CloudWatch, Bash, Python, Git, GitHub, Scrum"
+                },
+                {
+                    "position": "Frontend Developer",
+                    "startDate": "2020-09-01",
+                    "endDate": "2021-08-01",
+                    "title": "Página de Inicio de la Empresa",
+                    "summary": [
+                        "Responsable del desarrollo y diseño de la página de inicio de la empresa utilizando React, CSS y Material-UI, siguiendo maquetas predefinidas para asegurar una interfaz visualmente atractiva y funcional.",
+                        "Implementación de virtualización de aplicaciones mediante Docker, optimizando el entorno de desarrollo y despliegue.",
+                        "Gestión eficiente de repositorios en GitHub y despliegue de la aplicación en AWS, garantizando un flujo de trabajo continuo y estable."
+                    ],
+                    "technologies": "React, Docker, AWS ECR, AWS EC2, CSS, GitHub"
+                }
+            ]
         }
     ],
     "education": [
         {
             "institution": "Instituto Superior Santo Domingo",
             "url": "https://issd.edu.ar/es/analista-sistemas/",
-            "area": "Analista Sistemas",
+            "area": "Analista de Sistemas",
             "studyType": "Terciario",
             "startDate": "01-01-2020",
             "endDate": null
@@ -69,226 +133,65 @@
     ],
     "skills": [
         {
-            "name": "HTML",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Frontend"
+            "category": "Lenguajes y Frameworks",
+            "items": [
+                "Node.js",
+                "TypeScript",
+                "React",
+                "Nest.js",
+                "Express.js"
             ]
         },
         {
-            "name": "Python",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "Data Science",
-                "Machine Learning"
+            "category": "Bases de Datos - ODMs/ORMs",
+            "items": [
+                "PostgreSQL",
+                "MongoDB",
+                "MySQL",
+                "Mongoose (ODM)",
+                "Prisma (ORM)"
             ]
         },
         {
-            "name": "CSS",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Frontend",
-                "Diseño Responsive"
+            "category": "Infraestructura",
+            "items": [
+                "AWS (EC2, S3, Lambda, ECR, CloudWatch)",
+                "Docker"
             ]
         },
         {
-            "name": "JavaScript",
-            "level": "Master",
-            "keywords": [
-                "Web development",
-                "Frontend",
-                "Backend",
-                "Fullstack"
+            "category": "Blockchain",
+            "items": [
+                "Solidity",
+                "Web3.js",
+                "Ethereum",
+                "Solana",
+                "Polygon"
             ]
         },
         {
-            "name": "Tailwind",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Frontend",
-                "CSS Framework",
-                "Diseño Responsive"
+            "category": "Otras Herramientas",
+            "items": [
+                "Zod",
+                "Bash",
+                "Postman",
+                "Stripe API"
             ]
         },
         {
-            "name": "TypeScript",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Frontend",
-                "Backend",
-                "JavaScript Superset"
+            "category": "Testing",
+            "items": [
+                "Jest",
+                "Pruebas unitarias",
+                "Pruebas de integración",
+                "TDD (Test-Driven Development)"
             ]
         },
         {
-            "name": "Node",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "JavaScript",
-                "Servidor"
-            ]
-        },
-        {
-            "name": "MySQL",
-            "level": "Advanced",
-            "keywords": [
-                "Bases de Datos",
-                "SQL",
-                "Database",
-                "Backend"
-            ]
-        },
-        {
-            "name": "Git",
-            "level": "Advanced",
-            "keywords": [
-                "Version control",
-                "Colaboración",
-                "Source code"
-            ]
-        },
-        {
-            "name": "GitHub",
-            "level": "Advanced",
-            "keywords": [
-                "Version control",
-                "Collaboration",
-                "Source code",
-                "Git"
-            ]
-        },
-        {
-            "name": "Nest",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "Static Generation"
-            ]
-        },
-        {
-            "name": "React",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Frontend",
-                "JavaScript Library",
-                "UI"
-            ]
-        },
-        {
-            "name": "Jest",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Frontend",
-                "Testing",
-                "JavaScript Library"
-            ]
-        },
-        {
-            "name": "Docker",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "DevOps",
-                "Containerization"
-            ]
-        },
-        {
-            "name": "AWS",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "DevOps",
-                "Cloud"
-            ]
-        },
-        {
-            "name": "MongoDB",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "Database",
-                "NoSQL"
-            ]
-        },
-        {
-            "name": "Postman",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "API"
-            ]
-        },
-        {
-            "name": "Mongoose",
-            "level": "Advanced",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "Database",
-                "ODM"
-            ]
-        },
-        {
-            "name": "Astro",
-            "level": "",
-            "keywords": [
-                "Web development",
-                "Frontend",
-                "Static Generation"
-            ]
-        },
-        {
-            "name": "Linux",
-            "level": "",
-            "keywords": [
-                "Operating System",
-                "Backend",
-                "DevOps",
-                "Server"
-            ]
-        },
-        {
-            "name": "Stellar",
-            "level": "",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "Criptomoneda",
-                "Contratos inteligentes"
-            ]
-        },
-        {
-            "name": "Ethereum",
-            "level": "",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "Criptomoneda",
-                "Contratos inteligentes"
-            ]
-        },
-        {
-            "name": "Go",
-            "level": "",
-            "keywords": [
-                "Web development",
-                "Backend",
-                "Lenguaje de programación",
-                "Servidor"
+            "category": "Metodologías",
+            "items": [
+                "Scrum",
+                "Agile"
             ]
         }
     ],

@@ -1,88 +1,90 @@
 ---
 import Section from "../Section.astro";
-import HTML from "@/icons/Html.astro";
-import CSS from "@/icons/Css.astro";
-import JavaScript from "@/icons/JavaScript.astro";
-import TypeScript from "@/icons/Types.astro";
-import React from "@/icons/React.astro";
-import Node from "@/icons/Node.astro";
-import MySQL from "@/icons/Sql.astro";
-import Git from "@/icons/Git.astro";
-import GitHub from "@/icons/GitHub.astro";
-import Tailwind from "@/icons/Tailwind.astro";
-import AWS from "@/icons/Aws.astro";
-import Docker from "@/icons/Docker.astro";
-import MongoDB from "@/icons/MongoDB.astro";
-import Nest from "@/icons/NestJs.astro";
-import Jest from "@/icons/Jest.astro";
-import Python from "@/icons/Python.astro";
-import Linux from "@/icons/Linux.astro";
-import Mongoose from "@/icons/Mongoose.astro";
-import Postman from "@/icons/Postman.astro";
-import Ethereum from "@/icons/Ethereum.astro";
-import Stellar from "@/icons/Stellar.astro";
-import Go from "@/icons/Go.astro";
 import { skills } from "@cv";
-
-const SKILLS_ICONS: Record<string, any> = {
-  HTML,
-  CSS,
-  JavaScript,
-  TypeScript,
-  React,
-  Node,
-  MySQL,
-  Git,
-  GitHub,
-  Tailwind,
-  AWS,
-  Docker,
-  MongoDB,
-  Nest,
-  Jest,
-  Python,
-  Linux,
-  Mongoose,
-  Postman,
-  Ethereum,
-  Stellar,
-  Go,
-};
 ---
 
-<Section title="Habilidades">
-  <ul>
+<Section title="COMPETENCIAS TÉCNICAS">
+  <div class="skills-card">
     {
-      skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name;
-        const Icon = SKILLS_ICONS[iconName];
-
-        return (
-          <li>
-            {Icon && <Icon />} <span>{name}</span>
-          </li>
-        );
-      })
+      skills.map(({ category, items }) => (
+        <div class="skill-category">
+          <h4>{category}</h4>
+          <ul class="skill-items">
+            {items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))
     }
-  </ul>
+  </div>
 </Section>
 
 <style>
-  ul {
-    display: inline-flex;
-    gap: 8px;
-    flex-wrap: wrap;
+  .skills-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    border: 1px solid #e5e7eb;
   }
 
-  li {
-    align-items: center;
-    background: #eee;
-    border-radius: 6px;
-    color: black;
+  .skills-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .skill-category {
+    margin-bottom: 1rem;
+  }
+
+  .skill-category h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.95rem;
+    color: #333;
+  }
+
+  .skill-items {
     display: flex;
-    font-size: 0.8rem;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .skill-items li {
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: #333;
     font-weight: 500;
-    gap: 4px;
-    padding: 0.2rem 0.6rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .skill-items li:hover {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.2);
+  }
+
+  @media (min-width: 768px) {
+    .skills-card {
+      padding: 3rem;
+    }
+
+    .skill-category h4 {
+      font-size: 1.5rem;
+    }
   }
 </style>

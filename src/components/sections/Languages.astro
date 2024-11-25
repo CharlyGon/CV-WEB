@@ -1,0 +1,107 @@
+---
+import Section from "../Section.astro";
+import { languages } from "@cv";
+import LanguageIcon from "../../icons/WorldMap.astro";
+---
+
+<Section title="Idiomas">
+    <div class="languages-card">
+        <ul class="languages-list">
+            {
+                languages.map(({ language, fluency }) => (
+                    <li class="language-item">
+                        <article>
+                            <header class="language-header">
+                                <div class="language-title">
+                                    <LanguageIcon class="language-icon" />
+                                    <span class="language-name">
+                                        {language}
+                                    </span>
+                                </div>
+                                <span class="language-fluency">{fluency}</span>
+                            </header>
+                        </article>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</Section>
+
+<style>
+    .languages-card {
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-top: 2rem;
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    .languages-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .languages-list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .language-item {
+        margin-bottom: 1.5rem;
+        padding: 1rem 1.5rem;
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        border-left: 4px solid #007bff;
+        transition:
+            background-color 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    .language-item:hover {
+        background-color: #f0f0f0;
+        transform: translateX(5px);
+    }
+
+    .language-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .language-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .language-name {
+        font-weight: 600;
+        color: #111;
+        font-size: 1.2rem;
+    }
+
+    .language-fluency {
+        color: #666;
+        font-size: 1rem;
+        font-style: italic;
+        background: #e9ecef;
+        padding: 4px 8px;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 700px) {
+        .language-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .language-fluency {
+            margin-top: 8px;
+        }
+    }
+</style>

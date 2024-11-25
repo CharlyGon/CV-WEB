@@ -1,14 +1,13 @@
 ---
 import { basics } from "@cv";
 import Section from "@/components/Section.astro";
-import Mail from "@/icons/Mail.astro";
-import Phone from "@/icons/Phone.astro";
-import LinkedIn from "@/icons/LinkedIn.astro";
+import Mail from "@/icons/Email.astro";
+import LinkedIn from "@/icons/Linkedin.astro";
 import GitHub from "@/icons/GitHub.astro";
-import WorldMap from "@/icons/WorldMap.astro";
+import Address from "@/icons/Address.astro";
 import type { SocialIcon } from "@/types";
 
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, email } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: SocialIcon = {
@@ -25,28 +24,24 @@ const printInfo = [gitHubUrl, linkedUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
-  <div class="container">
+  <div class="container-card">
     <div class="info">
       <h1>{name}</h1>
-      <h2>{label}</h2>
-      <span>
-        <WorldMap />
+      <h2 class="description-text">{label}</h2>
+      <span class="location">
+        <Address />
         {city}, {region}
       </span>
-      <span>
+      <span class="email">
         <Mail />
         {email}
-      </span>
-      <span>
-        <Phone />
-        {phone}
       </span>
       <footer class="print">
         {printInfo}
       </footer>
       <footer class="no-print">
         {
-          profiles.map(({ network, url}) => {
+          profiles.map(({ network, url }) => {
             const Icon = SOCIAL_ICONS[network];
 
             return (
@@ -62,106 +57,182 @@ const printInfo = [gitHubUrl, linkedUrl].filter(Boolean).join(" • ");
         }
       </footer>
     </div>
-    <figure>
-      <img src={image} alt={name} />
+    <figure class="profile-pic">
+      <img src={image} alt={`Foto de perfil de ${name}`} id="profile-image" />
     </figure>
   </div>
 </Section>
 
 <style>
-  .container {
+  .container-card {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #fdfdfd, #f0f0f0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .container-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   }
 
   .info {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding-right: 32px;
+    gap: 1rem;
+    max-width: 600px;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0;
   }
 
   h2 {
     color: #444;
     font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  .email {
+    margin-top: -1rem;
+  }
+
+  .location,
+  .email {
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.1rem;
-    text-wrap: balance;
+  }
+
+  .profile-pic {
+    align-self: flex-start;
   }
 
   img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    width: 170px;
-    border-radius: 16px;
-    border: 1px solid black;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
-  span {
-    color: #666;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-size: 0.85rem;
-    letter-spacing: -0.05rem;
-  }
-
-  footer {
-    color: #555;
-    font-size: 0.65rem;
-    display: flex;
-    gap: 4px;
-    margin-top: 8px;
-  }
-
-  footer a {
+  footer.print {
     color: #777;
+    font-size: 0.85rem;
+    display: none;
+  }
+
+  footer.no-print {
+    display: flex;
+    gap: 14px;
+    margin-top: 1rem;
+  }
+
+  footer.no-print a {
+    color: #444;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #eee;
-    padding: 4px;
-    height: 32px;
-    width: 32px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
 
-  footer a:hover {
-    background: #eee;
-    border: 1px solid #ddd;
+  footer.no-print a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #007bff, #035fc2);
+    color: #fff;
   }
 
-  @media (width <= 700px) {
-    .container {
+  @media (max-width: 700px) {
+    .container-card {
       flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem;
     }
 
     .info {
-      justify-content: center;
       align-items: center;
-      padding-right: 0;
-      text-align: center;
+      max-width: 100%;
     }
 
-    figure {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .profile-pic {
+      margin: 1rem 0;
     }
 
-    h2 {
-      text-wrap: balance;
-    }
-
-    figure {
-      margin: 0 auto;
+    footer.print {
+      display: block;
     }
   }
+
+  .profile-pic {
+    align-self: flex-start;
+  }
+
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s ease;
+  }
+
+  @keyframes rotateImage {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  img.rotate {
+    animation: rotateImage 1s ease;
+  }
 </style>
+
+<script>
+  const profileImage = document.getElementById("profile-image");
+  if (profileImage) {
+    profileImage.addEventListener("click", () => {
+      const image = document.getElementById("profile-image");
+      if (image) {
+        image.classList.add("rotate");
+      }
+
+      setTimeout(() => {
+        if (image) {
+          image.classList.remove("rotate");
+        }
+      }, 1000);
+    });
+  }
+</script>

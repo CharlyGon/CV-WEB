@@ -1,0 +1,267 @@
+<style>
+    .background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    /* Ondas */
+    .wave-container,
+    .wave-container-back,
+    .wave-front-container {
+        position: absolute;
+        width: 200%;
+        bottom: 0;
+        display: flex;
+    }
+
+    .wave-container {
+        animation: waveScroll 85s linear infinite;
+    }
+
+    .wave-container-back {
+        bottom: 45px;
+        animation: waveScrollBack 30s linear infinite;
+    }
+
+    .wave-front-container {
+        bottom: -50px;
+        animation: waveFrontScroll 10s linear infinite;
+    }
+
+    @keyframes waveScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes waveScrollBack {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes waveFrontScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .wave-svg {
+        width: 50%;
+        height: auto;
+    }
+
+    .wave {
+        fill: #007bff;
+        opacity: 0.7;
+    }
+
+    .wave-back {
+        fill: #3399ff;
+        opacity: 0.5;
+    }
+
+    .wave-front {
+        fill: #00aaff;
+        opacity: 0.8;
+    }
+
+    /* Bolitas animadas */
+    .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(0, 123, 255, 0.5);
+        animation: floatAnimation var(--animation-duration) ease-in-out infinite;
+        pointer-events: none;
+    }
+
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+        50% {
+            transform: translateY(-50px) translateX(35px);
+        }
+        100% {
+            transform: translateY(0) translateX(0);
+        }
+    }
+
+    /* Tamaños de las bolitas y posición aleatoria */
+    .bubble:nth-child(1) {
+        --animation-duration: 18s;
+        width: 20px;
+        height: 20px;
+        top: 20%;
+        left: 15%;
+    }
+
+    .bubble:nth-child(2) {
+        --animation-duration: 22s;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        left: 35%;
+    }
+
+    .bubble:nth-child(3) {
+        --animation-duration: 20s;
+        width: 15px;
+        height: 15px;
+        top: 70%;
+        left: 60%;
+    }
+
+    .bubble:nth-child(4) {
+        --animation-duration: 25s;
+        width: 30px;
+        height: 30px;
+        top: 40%;
+        left: 75%;
+    }
+
+    .bubble:nth-child(5) {
+        --animation-duration: 15s;
+        width: 10px;
+        height: 10px;
+        top: 10%;
+        left: 80%;
+    }
+
+    .bubble:nth-child(6) {
+        --animation-duration: 18s;
+        width: 18px;
+        height: 18px;
+        top: 30%;
+        left: 25%;
+    }
+
+    .bubble:nth-child(7) {
+        --animation-duration: 28s;
+        width: 35px;
+        height: 35px;
+        top: 60%;
+        left: 10%;
+    }
+
+    .bubble:nth-child(8) {
+        --animation-duration: 30s;
+        width: 22px;
+        height: 22px;
+        top: 80%;
+        left: 50%;
+    }
+
+    .bubble:nth-child(9) {
+        --animation-duration: 26s;
+        width: 14px;
+        height: 14px;
+        top: 25%;
+        left: 90%;
+    }
+
+    .bubble:nth-child(10) {
+        --animation-duration: 45s;
+        width: 10px;
+        height: 10px;
+        top: 70%;
+        left: 75%;
+    }
+</style>
+
+<div class="background-container">
+    <!-- Olas de fondo -->
+    <div class="wave-container-back">
+        <svg
+            class="wave-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+        >
+            <path
+                class="wave-back"
+                d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
+            ></path>
+        </svg>
+        <svg
+            class="wave-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+        >
+            <path
+                class="wave-back"
+                d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
+            ></path>
+        </svg>
+    </div>
+
+    <div class="wave-container">
+        <svg
+            class="wave-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+        >
+            <path
+                class="wave"
+                d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
+            ></path>
+        </svg>
+        <svg
+            class="wave-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+        >
+            <path
+                class="wave"
+                d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
+            ></path>
+        </svg>
+    </div>
+
+    <div class="wave-front-container">
+        <svg
+            class="wave-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+        >
+            <path
+                class="wave-front"
+                d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
+            ></path>
+        </svg>
+        <svg
+            class="wave-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 320"
+        >
+            <path
+                class="wave-front"
+                d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
+            ></path>
+        </svg>
+    </div>
+
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</div>
