@@ -1,4 +1,50 @@
+<footer class="footer">
+    Gonzalo Fernández - 2024 | Usa <span class="key">Ctrl</span> + <span
+        class="key">K</span
+    > para más opciones
+</footer>
+
 <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(90deg, #007bff 0%, #00aac8 100%);
+        color: #fff;
+        padding: 8px 15px;
+        font-size: 1rem;
+        font-weight: 500;
+        z-index: 10;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .key {
+        display: inline-block;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        padding: 3px 6px;
+        margin: 0 2px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            font-size: 0.9rem;
+            padding: 10px 15px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            display: none;
+        }
+    }
+
     .background-container {
         position: fixed;
         top: 0;
