@@ -126,6 +126,18 @@
         opacity: 0.8;
     }
 
+    /* Espuma en la parte superior de las ondas */
+    .wave-foam {
+        fill: rgba(
+            255,
+            255,
+            255,
+            0.4
+        ); /* Blanco translúcido para simular la espuma */
+        filter: blur(5px); /* Efecto de desenfoque */
+        opacity: 0.6; /* Para un efecto más sutil */
+    }
+
     /* Bolitas animadas */
     .bubble {
         position: absolute;
@@ -287,6 +299,10 @@
                 class="wave-front"
                 d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
             ></path>
+            <path
+                class="wave-foam"
+                d="M0,150 C320,230 640,70 960,150 C1280,230 1600,70 1920,150 L1920,320 L0,320 Z"
+            ></path>
         </svg>
         <svg
             class="wave-svg"
@@ -297,6 +313,13 @@
                 class="wave-front"
                 d="M0,160 C320,240 640,80 960,160 C1280,240 1600,80 1920,160 L1920,320 L0,320 Z"
             ></path>
+            <!-- Capa de espuma suave -->
+            <path
+                class="wave-foam"
+                d="M0,150 C320,230 640,70 960,150 C1280,230 1600,70 1920,150 L1920,320 L0,320 Z"
+                style="transform: translateX(-0.5%);"
+            >
+            </path>
         </svg>
     </div>
 
